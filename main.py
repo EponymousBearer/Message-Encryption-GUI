@@ -69,7 +69,7 @@ def main_screen():
     global text1
 
     screen = Tk()
-    screen.geometry("375*398")
+    screen.geometry("375x398")
 
     # icon
     image_icon = PhotoImage(file="keys.png")
@@ -88,7 +88,7 @@ def main_screen():
     Label(text="Enter secret key for encrption and decryption",
           fg="black", font=("calibri", 13)).place(x=10, y=170)
 
-    code = Stringvar()
+    code = StringVar()
     Entry(textvariable=code, width=19, bd=0, font=(
         "arial", 25), show="*").place(x=10, y=200)
 
